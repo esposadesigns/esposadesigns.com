@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms & Privacy — Esposa Designs</title>
+<meta name="description" content="Terms of Service and Privacy Policy for Esposa Designs Builder Showroom service.">
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --black:#0A0A0A;
+  --near-black:#111111;
+  --dark:#1A1A1A;
+  --steel:#2C2C2C;
+  --iron:#888888;
+  --smoke:#A8A8A8;
+  --ash:#BEBEBE;
+  --bone:#E8E4DC;
+  --white:#F5F3EF;
+  --gold:#C9962A;
+  --gold-light:#E8B84B;
+  --gold-dim:#8A6518;
+  --red:#C0392B;
+}
+html{scroll-behavior:smooth}
+body{background:var(--black);font-family:'Barlow',sans-serif;font-size:15px;color:var(--bone);line-height:1.6;overflow-x:hidden;}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:500;display:flex;align-items:center;justify-content:space-between;padding:16px 48px;background:rgba(10,10,10,0.95);backdrop-filter:blur(16px);border-bottom:1px solid rgba(201,150,42,0.2);}
+.nav-brand{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.nav-logo{
+  width:32px;
+  height:32px;
+  object-fit:cover;
+  object-position:center;
+  border-radius:5px;
+  box-shadow:0 0 0 4px var(--gold),0 0 0 7px rgba(201,150,42,0.2),inset 0 0 0 2px rgba(28,20,8,0.3);
+}
+.logo-icon{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:5px;
+  box-shadow:0 0 0 2px var(--gold),0 0 0 4px rgba(201,150,42,0.2),inset 0 0 0 2px rgba(28,20,8,0.3);
+  background:var(--gold);
+}
+.nav-brand-text{font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--white);}
+.nav-links{display:flex;align-items:center;gap:28px;}
+.nav-link{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--ash);text-decoration:none;transition:color 0.2s;}
+.nav-link:hover{color:var(--gold)}
+.nav-cta{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;background:var(--gold);color:var(--black);padding:10px 24px;text-decoration:none;transition:all 0.2s;clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,8px 100%,0 calc(100% - 8px));}
+.nav-cta:hover{background:var(--gold-light)}
+
+/* ── PAGE HEADER ── */
+.page-header{padding:140px 48px 80px;background:var(--near-black);position:relative;overflow:hidden;border-bottom:1px solid rgba(201,150,42,0.2);}
+.page-header::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);}
+.page-header::after{content:'';position:absolute;bottom:-200px;right:-200px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(201,150,42,0.06),transparent 60%);pointer-events:none;}
+.page-header-inner{max-width:800px;margin:0 auto;}
+.page-kicker{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:600;letter-spacing:0.4em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:flex;align-items:center;gap:12px;}
+.page-kicker::before{content:'';width:28px;height:2px;background:var(--gold)}
+.page-headline{font-family:'Bebas Neue',sans-serif;font-size:72px;line-height:1;color:var(--white);margin-bottom:16px;letter-spacing:0.02em;}
+.page-meta{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:var(--iron);}
+
+/* ── CONTENT ── */
+.content-wrap{max-width:800px;margin:0 auto;padding:80px 48px 120px;}
+
+.doc-section{margin-bottom:64px;}
+.doc-section:last-child{margin-bottom:0;}
+
+.doc-section-label{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.4em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;display:flex;align-items:center;gap:12px;padding-bottom:12px;border-bottom:1px solid var(--steel);}
+.doc-section-label::before{content:'';width:20px;height:2px;background:var(--gold)}
+
+.doc-h2{font-family:'Bebas Neue',sans-serif;font-size:40px;color:var(--white);margin-bottom:24px;letter-spacing:0.02em;}
+.doc-h3{font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--bone);margin-bottom:12px;margin-top:32px;}
+.doc-h3:first-of-type{margin-top:0;}
+
+.doc-p{font-size:15px;font-weight:300;color:var(--ash);line-height:1.85;margin-bottom:16px;}
+.doc-p:last-child{margin-bottom:0;}
+.doc-p strong{color:var(--bone);font-weight:500;}
+.doc-p a{color:var(--gold);text-decoration:none;}
+.doc-p a:hover{color:var(--gold-light);text-decoration:underline;}
+
+.doc-list{list-style:none;margin-bottom:16px;}
+.doc-list li{font-size:15px;font-weight:300;color:var(--ash);line-height:1.85;padding-left:20px;position:relative;margin-bottom:8px;}
+.doc-list li::before{content:'—';position:absolute;left:0;color:var(--gold);font-size:12px;}
+
+.doc-divider{height:1px;background:linear-gradient(90deg,var(--steel),transparent);margin:64px 0;}
+
+.highlight-box{background:var(--dark);border:1px solid var(--steel);border-left:3px solid var(--gold);padding:28px 32px;margin:32px 0;}
+.highlight-box p{font-size:15px;font-weight:300;color:var(--ash);line-height:1.85;margin:0;}
+.highlight-box p strong{color:var(--bone);font-weight:500;}
+
+/* ── FOOTER ── */
+footer{background:var(--near-black);border-top:1px solid rgba(201,150,42,0.2);padding:48px;}
+.footer-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px;}
+.footer-brand{display:flex;align-items:center;gap:12px;}
+.footer-brand-text{font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--white);}
+.footer-copy{font-size:13px;color:var(--iron);}
+.footer-back{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--ash);text-decoration:none;transition:color 0.2s;}
+.footer-back:hover{color:var(--gold)}
+
+/* ── RESPONSIVE ── */
+@media(max-width:768px){
+  nav{padding:14px 24px;}
+  .nav-links{display:none;}
+  .page-header{padding:120px 24px 60px;}
+  .page-headline{font-size:52px;}
+  .content-wrap{padding:60px 24px 80px;}
+  footer{padding:32px 24px;}
+  .footer-inner{flex-direction:column;align-items:flex-start;gap:16px;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-brand">
+    <span class="logo-icon"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAASABIAAD/4QF8RXhpZgAATU0AKgAAAAgABgESAAMAAAABAAEAAAEaAAUAAAABAAAAVgEbAAUAAAABAAAAXgEoAAMAAAABAAIAAAEyAAIAAAAUAAAAZodpAAQAAAABAAAAegAAAAAAAABIAAAAAQAAAEgAAAABMjAyNTowOTozMCAwOTo1OTowMAAAD5AAAAcAAAAEMDIyMZADAAIAAAAUAAABNJAEAAIAAAAUAAABSJAQAAIAAAAHAAABXJARAAIAAAAHAAABZJASAAIAAAAHAAABbJEBAAcAAAAEAQIDAJKQAAIAAAAEMDAwAJKRAAIAAAAEMDAwAJKSAAIAAAAEMDAwAKAAAAcAAAAEMDEwMKABAAMAAAAB//8AAKACAAQAAAABAAABdKADAAQAAAABAAABdKQGAAMAAAABAAAAAAAAAAAyMDI1OjA5OjMwIDA5OjU5OjAwADIwMjU6MDk6MzAgMDk6NTk6MDAALTA0OjAwAAAtMDQ6MDAAAC0wNDowMAAA/+0AfFBob3Rvc2hvcCAzLjAAOEJJTQQEAAAAAABEHAFaAAMbJUccAgAAAgACHAI/AAYwOTU5MDAcAj4ACDIwMjUwOTMwHAI3AAgyMDI1MDkzMBwCPAALMDk1OTAwLTA0MDA4QklNBCUAAAAAABDUWakZnHGxf0zfZZmTagIR/+ICKElDQ19QUk9GSUxFAAEBAAACGGFwcGwEAAAAbW50clJHQiBYWVogB+YAAQABAAAAAAAAYWNzcEFQUEwAAAAAQVBQTAAAAAAAAAAAAAAAAAAAAAAAAPbWAAEAAAAA0y1hcHBsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKZGVzYwAAAPwAAAAwY3BydAAAASwAAABQd3RwdAAAAXwAAAAUclhZWgAAAZAAAAAUZ1hZWgAAAaQAAAAUYlhZWgAAAbgAAAAUclRSQwAAAcwAAAAgY2hhZAAAAewAAAAsYlRSQwAAAcwAAAAgZ1RSQwAAAcwAAAAgbWx1YwAAAAAAAAABAAAADGVuVVMAAAAUAAAAHABEAGkAcwBwAGwAYQB5ACAAUAAzbWx1YwAAAAAAAAABAAAADGVuVVMAAAA0AAAAHABDAG8AcAB5AHIAaQBnAGgAdAAgAEEAcABwAGwAZQAgAEkAbgBjAC4ALAAgADIAMAAyADJYWVogAAAAAAAA9tUAAQAAAADTLFhZWiAAAAAAAACD3wAAPb////+7WFlaIAAAAAAAAEq/AACxNwAACrlYWVogAAAAAAAAKDgAABELAADIuXBhcmEAAAAAAAMAAAACZmYAAPKnAAANWQAAE9AAAApbc2YzMgAAAAAAAQxCAAAF3v//8yYAAAeTAAD9kP//+6L///2jAAAD3AAAwG7/wAARCAF0AXQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9sAQwACAgICAgIDAgIDBQMDAwUGBQUFBQYIBgYGBgYICggICAgICAoKCgoKCgoKDAwMDAwMDg4ODg4PDw8PDw8PDw8P/9sAQwECAwMEBAQHBAQHEAsJCxAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQ/90ABAAY/9oADAMBAAIRAxEAPwD9xcAfd/Tr+I5B/Sjr8pI+nc+nGPTsKX5eU6HoQcnOPb/PFIG6/MTg4yMZH1HfGPavDPUHdM5HTk4OOn4UfLnjt6Ecds4PQdj0xTRgKdx4wOOOPfrQp+b5T9eOv6Y/KgB3T5jgDoMcdemKQIB8yqoJ6DGD07Htn6D6UmDnjk5AJz2GM8Y6f56U7kdemO+ec0AO5KnjgcdR6f544qM7QAg5GM4PB6dcfhSjC9ccc8gYGPf17cfpQcLyWGR1APGf5Zx0oAUgDLA4Ge4HHoKQhe42keg6j2o5YBsgdyCP84PtR0bcvIxzkZ5HQgAce/PpigBWUZCkYA744wfTFJkbdvBJ46ehx0HI/l7UuSBkYB4OBnHT8vyoyQCAAc9O30zgDj8qBWDkfdzkjB/DAx/nmlCk+vGeOnHHHb8OKbg9yc4x746gcc9O1OAY9sYGcjjn2x7ev5UDE/DIwMgdPbA7H60gyQGUDjpg+lOJAUbuAB07/pzx6fypMNyMAnjGOOnsO2P/ANdAAdwHzE4Pp2/p9P5UAAYC9PQ9v/rfWlIx0z0yBnH4f4UHj73pxjBP4dOlAAW/hxyBwD9Ow9aFXucccA9APw+lKD3U5HUEYxz09xTcrktjIHH5/wCAoAd1x27DuD+NNGOAQPm9en/1qVsZKllz7Z7+1JgcDqPzx6e3+fwoAcM8cAjsD1/DkH68UbQvy88ZH4e2entx+lA6nBBHocZyPf8Az+FDHjd2xgZ5/l0oAQcAkHlR1PHB+nIo+71xkdCOP8/lSg88DHTHcfy9P8ikGc7gMZ6gj+XYfyoAGXOQScDocDjPvRnOMEYHocj8un8bajjg9R0Az/hijdwRncDg8cgevTigBwHtx0x9PXmk9iBx68j8M0nUDng4xxkY/wD1dKVR0wBhfbA/HHSgAwB0wMdOMYHt6UZJIDEFjnGeOP0PHTr9KFT+FeCp7Hr7Y4A+lKSQMZwAB7ge+MUAL3KkZB4IwDz9McA/jSEZz/CQMjPGPp6fypNu0ckYPOc4x+f+RRj8D15J6/4UCsDf3TwSBgjOM+vB6UgX+9jHtgDj2Jp3OTsAzxg/r2o6E9M44B/x/wD1UDDBPynk46DAx749vajaMY6kDGcYxx7dqRupwCOnb/6w4/Dil5GcDkjtgYFACY4wT8vXOOB69sfrSqox1xnnjgcjt6D2pvXnkfUZ/Dp09qXAZQW6Y5z7fQen0xQAvH3eMnH4duBxR8xHykZxg57e2MZpAQoGD1x3x+Wf5UZyA2AQwznPUDnIA9P8+tAClRghRn3waBg9QR3B7dOn+FJ0JB68cA/5Hn/APVTNqkg8jkHg5A9R7Gn8gFJIPGT+Pc0CsOwGPIz9eev6fypGVuW2k9s4ycf0pQv97jPTgcfy7UhDEYX07f5/CgA+9k9FHp1P9KjDfKFByM/5/KjnHTjHH/1qQJkg4P5UAB7J1OMZ60oyvXnpj2/oKTaxB6E+nYUqk9uxoAXr2z7jtTcZp5JpOOxFAH/2Q==" alt="" class="nav-logo"></span>
+    <span class="nav-brand-text">Esposa Designs</span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html#problem" class="nav-link">The Problem</a>
+    <a href="index.html#workflow" class="nav-link">How It Works</a>
+    <a href="index.html#offer" class="nav-link">Pricing</a>
+    <a href="index.html#about" class="nav-link">About</a>
+  </div>
+  <a href="index.html#offer" class="nav-cta">Get Started</a>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="page-header-inner">
+    <div class="page-kicker">Legal</div>
+    <h1 class="page-headline">Terms & Privacy</h1>
+    <p class="page-meta">Last updated: March 2025 &nbsp;·&nbsp; Esposa Designs LLC</p>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="content-wrap">
+
+  <!-- TERMS OF SERVICE -->
+  <div class="doc-section">
+    <div class="doc-section-label">Terms of Service</div>
+    <h2 class="doc-h2">What You're Agreeing To</h2>
+
+    <p class="doc-p">By subscribing to Builder Showroom by Esposa Designs, you agree to these terms. Please read them — they're straightforward.</p>
+
+    <h3 class="doc-h3">The Service</h3>
+    <p class="doc-p">Esposa Designs provides monthly gallery curation and management for builders and remodelers. You text us job photos; we curate, upload, and maintain your branded project gallery. The service is delivered on a month-to-month subscription basis at <strong>$129/month</strong>.</p>
+
+    <h3 class="doc-h3">Your Photos</h3>
+    <p class="doc-p">By sending us photos, you confirm that you own the rights to those images or have permission to use them. You grant Esposa Designs a non-exclusive license to curate, edit, and display your photos within your gallery. We will not use your photos for any purpose outside of your gallery without your explicit written consent.</p>
+
+    <h3 class="doc-h3">Subscription & Billing</h3>
+    <ul class="doc-list">
+      <li>Billing is monthly and recurring. Your subscription renews automatically each month.</li>
+      <li>You may cancel at any time. Cancellation takes effect at the end of your current billing period — no partial refunds.</li>
+      <li>Esposa Designs reserves the right to adjust pricing with 30 days written notice.</li>
+    </ul>
+
+    <h3 class="doc-h3">What We Deliver</h3>
+    <p class="doc-p">We will maintain your gallery on an ongoing basis as long as your subscription is active. Response times and upload turnaround are handled on a rolling basis — we aim to have new photos uploaded within 3 business days of receipt.</p>
+
+    <h3 class="doc-h3">Cancellation & Termination</h3>
+    <p class="doc-p">You can cancel anytime by texting or emailing us. If your subscription lapses or is cancelled, your gallery access may be suspended. Esposa Designs reserves the right to terminate service for any reason with written notice.</p>
+
+    <h3 class="doc-h3">Limitation of Liability</h3>
+    <p class="doc-p">Esposa Designs is not liable for any loss of business, lost contracts, or indirect damages arising from use or unavailability of the service. Our total liability to you in any month will not exceed the amount paid for that month's service.</p>
+
+    <div class="highlight-box">
+      <p><strong>Plain English:</strong> We do the work, you own your photos, you can cancel whenever. We're not responsible for outcomes beyond the gallery itself.</p>
+    </div>
+  </div>
+
+  <div class="doc-divider"></div>
+
+  <!-- PRIVACY POLICY -->
+  <div class="doc-section">
+    <div class="doc-section-label">Privacy Policy</div>
+    <h2 class="doc-h2">Your Information</h2>
+
+    <p class="doc-p">We take your privacy seriously. Here's exactly what we collect, why, and what we do with it.</p>
+
+    <h3 class="doc-h3">What We Collect</h3>
+    <ul class="doc-list">
+      <li><strong>At signup:</strong> Your name, business name, and mobile number.</li>
+      <li><strong>During the service:</strong> Photos you send us via text, and any communications between us.</li>
+      <li><strong>Payment information:</strong> Processed securely by Stripe. We never see or store your full card details.</li>
+    </ul>
+
+    <h3 class="doc-h3">How We Use It</h3>
+    <ul class="doc-list">
+      <li>To deliver and manage your gallery.</li>
+      <li>To communicate with you about your service.</li>
+      <li>To process your monthly subscription payment.</li>
+    </ul>
+
+    <h3 class="doc-h3">What We Don't Do</h3>
+    <p class="doc-p">We do not sell, rent, or share your personal information with third parties for marketing purposes. We do not use your photos or business name in our own marketing without your explicit consent.</p>
+
+    <h3 class="doc-h3">Third-Party Services</h3>
+    <p class="doc-p">We use the following third-party services to operate:</p>
+    <ul class="doc-list">
+      <li><strong>Stripe</strong> — payment processing. Subject to <a href="https://stripe.com/privacy" target="_blank">Stripe's Privacy Policy</a>.</li>
+      <li><strong>Pixieset</strong> — gallery hosting. Subject to <a href="https://pixieset.com/privacy/" target="_blank">Pixieset's Privacy Policy</a>.</li>
+    </ul>
+
+    <h3 class="doc-h3">Data Retention</h3>
+    <p class="doc-p">We retain your account information and photos for the duration of your subscription. Upon cancellation, you may request deletion of your data by contacting us directly.</p>
+
+    <h3 class="doc-h3">Contact</h3>
+    <p class="doc-p">Questions about your data or these terms? Text or email us:</p>
+    <p class="doc-p">
+      <a href="tel:4017020009">401-702-0009</a> &nbsp;·&nbsp;
+      <a href="mailto:hello@esposadesigns.com">hello@esposadesigns.com</a>
+    </p>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-brand-text">Esposa Designs</span>
+    </div>
+    <p class="footer-copy">© 2025 Esposa Designs LLC. All rights reserved.</p>
+    <a href="index.html" class="footer-back">← Back to Home</a>
+  </div>
+</footer>
+
+</body>
+</html>
