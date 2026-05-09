@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Started | Esposa Designs</title>
+<meta name="description" content="Start your done-for-you digital guest hub for your short-term rental or boutique hospitality property.">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --bg:#F5F0EC;
+  --surface:#EDE6DF;
+  --surface-2:#FDF9F5;
+  --border:#DDD4CA;
+  --champagne:#C9A96E;
+  --sage:#8A9E8C;
+  --dark:#2A2420;
+  --text:#3D3530;
+  --muted:#8A7D75;
+  --white:#FDFAF7;
+}
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+}
+a { color: inherit; }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 22px;
+  background: rgba(245,240,236,0.92);
+  backdrop-filter: blur(14px);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid var(--border);
+}
+.brand-lockup {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  text-decoration: none;
+}
+.brand-icon {
+  height: 32px;
+  width: auto;
+  display: block;
+  flex: 0 0 auto;
+}
+.brand-text {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 18px;
+  line-height: 1;
+  color: var(--dark);
+  letter-spacing: 0.04em;
+  display: inline-block;
+  transform: translateY(12px);
+  white-space: nowrap;
+}
+.nav-btn {
+  padding: 10px 18px;
+  border: 1px solid var(--dark);
+  color: var(--dark);
+  background: transparent;
+  font-family: 'Outfit', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+.wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+main {
+  min-height: calc(100vh - 190px);
+}
+.hero {
+  padding: 54px 22px 62px;
+}
+.form-grid {
+  display: grid;
+  gap: 34px;
+  align-items: start;
+}
+.eyebrow-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.eyebrow-dot {
+  width: 7px;
+  height: 7px;
+  background: var(--sage);
+  border-radius: 50%;
+}
+.eyebrow-text {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--sage);
+  font-weight: 500;
+}
+h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: clamp(42px, 8vw, 82px);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  margin-bottom: 22px;
+  color: var(--dark);
+}
+h1 em, h2 em {
+  font-style: italic;
+  color: var(--champagne);
+}
+.hero-body {
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--muted);
+  max-width: 610px;
+  margin-bottom: 28px;
+}
+.trust-line {
+  color: var(--muted);
+  font-size: 13px;
+  max-width: 560px;
+}
+.mini-list {
+  margin-top: 30px;
+  border-top: 1px solid var(--border);
+  max-width: 560px;
+}
+.mini-item {
+  display: grid;
+  grid-template-columns: 26px 1fr;
+  gap: 14px;
+  padding: 17px 0;
+  border-bottom: 1px solid var(--border);
+}
+.mini-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--champagne);
+  border-radius: 50%;
+  margin-top: 9px;
+  opacity: .75;
+}
+.mini-title {
+  color: var(--dark);
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.mini-copy {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+.form-card {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  padding: 24px 20px;
+  box-shadow: 0 22px 70px rgba(42,36,32,0.10);
+}
+.form-eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--champagne);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+h2 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: clamp(27px, 4vw, 38px);
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: -0.03em;
+  margin-bottom: 10px;
+  color: var(--dark);
+}
+.form-intro {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.75;
+  margin-bottom: 24px;
+}
+.field-group {
+  margin-bottom: 15px;
+}
+label {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+input, textarea, select {
+  width: 100%;
+  border: 1px solid var(--border);
+  background: var(--white);
+  color: var(--text);
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 14px 14px;
+  outline: none;
+  border-radius: 0;
+}
+textarea {
+  min-height: 116px;
+  resize: vertical;
+}
+input:focus, textarea:focus, select:focus {
+  border-color: var(--champagne);
+  box-shadow: 0 0 0 3px rgba(201,169,110,0.12);
+}
+.form-row {
+  display: grid;
+  gap: 15px;
+}
+.btn-filled {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 52px;
+  padding: 15px 22px;
+  width: 100%;
+  border: 0;
+  background: var(--dark);
+  color: var(--white);
+  font-family: 'Outfit', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+.form-note {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.65;
+  margin-top: 14px;
+}
+.band {
+  background: var(--surface);
+  padding: 18px 22px;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.band::-webkit-scrollbar { display: none; }
+.band-item {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.band-div {
+  width: 1px;
+  background: var(--border);
+  flex-shrink: 0;
+}
+footer {
+  padding: 34px 22px;
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.footer-brand-lockup {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+.footer-copy {
+  font-size: 11px;
+  color: var(--muted);
+  text-align: center;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.footer-links a {
+  color: var(--muted);
+  text-decoration: none;
+}
+@media (min-width: 780px) {
+  nav { padding: 16px 42px; }
+  .hero { padding: 78px 42px 82px; }
+  .form-grid { grid-template-columns: 0.92fr 1.08fr; gap: 56px; align-items: center; }
+  .form-card { padding: 34px 32px; }
+  .form-row { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="brand-lockup" aria-label="Esposa Designs home">
+    <img src="data:image/png;base64,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" alt="" class="brand-icon" />
+    <span class="brand-text">Esposa Designs</span>
+  </a>
+  <a href="/" class="nav-btn">Back Home</a>
+</nav>
+
+<main>
+  <section class="hero">
+    <div class="wrap form-grid">
+      <div>
+        <div class="eyebrow-wrap">
+          <div class="eyebrow-dot"></div>
+          <span class="eyebrow-text">Start Your Guest Hub</span>
+        </div>
+        <h1>Let’s build your <em>guest experience.</em></h1>
+        <p class="hero-body">Send a few property details and we’ll follow up personally with the next steps for your digital guest hub.</p>
+        <p class="trust-line">Built for short-term rental operators, boutique hotels, and hospitality brands that want a cleaner way to guide guests.</p>
+
+        <div class="mini-list" aria-label="What happens next">
+          <div class="mini-item">
+            <div class="mini-dot"></div>
+            <div>
+              <div class="mini-title">Share your property</div>
+              <div class="mini-copy">Send your listing, property name, property type, and basic setup details.</div>
+            </div>
+          </div>
+          <div class="mini-item">
+            <div class="mini-dot"></div>
+            <div>
+              <div class="mini-title">We review the fit</div>
+              <div class="mini-copy">We’ll confirm the best setup, scope, and any details needed before buildout.</div>
+            </div>
+          </div>
+          <div class="mini-item">
+            <div class="mini-dot"></div>
+            <div>
+              <div class="mini-title">Your hub gets built</div>
+              <div class="mini-copy">One polished link for check-in, Wi-Fi, house details, local picks, reviews, and direct rebooking.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <div class="form-eyebrow">Property Intake</div>
+        <h2>Tell us about the stay.</h2>
+        <p class="form-intro">This helps us understand the property and what your guests need before arrival.</p>
+
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-row">
+            <div class="field-group">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field-group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+          </div>
+
+          <div class="field-group">
+            <label for="property-name">Property Name</label>
+            <input id="property-name" name="property_name" type="text" placeholder="Olivia Retreat" required>
+          </div>
+
+          <div class="field-group">
+            <label for="listing-link">Airbnb, VRBO, or Website Link</label>
+            <input id="listing-link" name="listing_link" type="url" placeholder="https://" required>
+          </div>
+
+          <div class="form-row">
+            <div class="field-group">
+              <label for="property-type">Property Type</label>
+              <select id="property-type" name="property_type" required>
+                <option value="">Select one</option>
+                <option>Single short-term rental</option>
+                <option>Multi-property STR operator</option>
+                <option>Boutique hotel</option>
+                <option>Other hospitality property</option>
+              </select>
+            </div>
+            <div class="field-group">
+              <label for="property-count">Number of Properties or Units</label>
+              <input id="property-count" name="property_count" type="text" placeholder="1 property, 12 units, 35 doors...">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field-group">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="Optional">
+            </div>
+            <div class="field-group">
+              <label for="timeline">Ideal Timeline</label>
+              <select id="timeline" name="timeline">
+                <option value="">Select one</option>
+                <option>As soon as possible</option>
+                <option>Within 2 weeks</option>
+                <option>This month</option>
+                <option>Just exploring</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field-group">
+            <label for="message">Anything Else We Should Know?</label>
+            <textarea id="message" name="message" placeholder="Share guest pain points, current instructions, branding notes, timeline, or anything you want included in the guest hub."></textarea>
+          </div>
+
+          <input type="hidden" name="_subject" value="New Esposa Designs Guest Hub Inquiry">
+          <button type="submit" class="btn-filled">Submit Property Details</button>
+          
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="band" aria-label="Guest hub features">
+    <span class="band-item">Check-In</span>
+    <span class="band-div"></span>
+    <span class="band-item">Wi-Fi</span>
+    <span class="band-div"></span>
+    <span class="band-item">House Details</span>
+    <span class="band-div"></span>
+    <span class="band-item">Local Favorites</span>
+    <span class="band-div"></span>
+    <span class="band-item">Reviews</span>
+    <span class="band-div"></span>
+    <span class="band-item">Direct Rebooking</span>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-brand-lockup">
+    <img src="data:image/png;base64,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" alt="" class="brand-icon" />
+    <span class="brand-text">Esposa Designs</span>
+  </div>
+  <div class="footer-links">
+    <a href="/privacy.html">Privacy</a>
+    <a href="/terms.html">Terms</a>
+  </div>
+  <p class="footer-copy">© 2026 Esposa Designs. Digital guest hubs for better stays.</p>
+</footer>
+
+</body>
+</html>
